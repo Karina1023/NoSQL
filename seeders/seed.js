@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 //updated with .env for heroku
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/workout', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitnesstracker', {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
